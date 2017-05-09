@@ -14,7 +14,7 @@ $tv = ['2 broke girls', 'a team', 'house of cards', 'eastenders', 'question time
 
 print_r($tv);
 echo '<br><br>';
-echo "my favorite show is " . $tv[0];
+echo 'my favorite show is ' . $tv[0];
 
 echo '<br>';
 
