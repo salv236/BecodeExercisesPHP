@@ -5,11 +5,24 @@
 function replaceAE(){
 	$replaceChars = array('caecotrophie', 'chaenichthys','microsphaera', 'sphaerotheca');
 	foreach($replaceChars as $word){
-		echo $word. '<br>';
+		$replace = str_replace('ae', 'æ', $word);
+		echo $replace . '<br>';
+		$replace = str_replace('æ', 'ae', $word);
+		echo $replace . '<br>';
 	}
 }
 
 replaceAE();
+
+/*function inverse(){
+	global $replaceChars;
+	global $word;
+	global $replace;
+	$replace = str_replace('æ', 'ae', $word);
+	echo $replace;
+}
+
+inverse(); */
 
 
 ?>
