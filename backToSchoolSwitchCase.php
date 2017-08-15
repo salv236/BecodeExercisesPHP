@@ -19,7 +19,7 @@
 			echo 'This job is null';
 		break;
 		case 6:
-			echo 'This work is not terrible';
+			echo 'This work is not bad';
 		break;
 		case 7:
 			echo 'This work is not terrible';
