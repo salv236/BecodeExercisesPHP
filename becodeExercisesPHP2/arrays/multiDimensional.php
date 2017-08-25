@@ -1,7 +1,19 @@
 <?php
 
-$me = array('firstname' => 'salvatore', 'lastname' => 'saia', 'age' => 39, 'status' => 'single',  'profession' => 'web developer', 'married' => false,
-	'sister' => array('age' => 36, 'firstname' => 'rosa', 'lastname' => 'saia', 'profession' => 'teacher', 'hobby' => 'driving')
+$me = array(
+	'firstname' => 'salvatore', 
+	'lastname' => 'saia', 
+	'age' => 39, 
+	'status' => 'single',  
+	'profession' => 'web developer', 
+	'married' => false,
+	'sister' => array(
+		'age' => 36, 
+		'firstname' => 'rosa', 
+		'lastname' => 'saia', 
+		'profession' => 'teacher', 
+		'hobby' => 'driving'
+		)
 
 	);
 
@@ -14,15 +26,16 @@ $me = array('firstname' => 'salvatore', 'lastname' => 'saia', 'age' => 39, 'stat
 
 // echo count($me);
 
-$me['hobby'] = ['taxonomy']; // inserts key and value within an associative array
+// within the array sister within the key hobby replace the value with taxonomy
+$me['sister']['hobby']= 'taxonomy';
 
 echo '<pre>';
 print_r($me);
 echo '<br>';
 
-print_r($me['hobby']);
+// print_r($me['hobby']);
 
-array_push();
+//array_push();
 
 print_r($me);
 
