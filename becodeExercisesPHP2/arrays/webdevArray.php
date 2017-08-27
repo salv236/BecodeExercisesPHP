@@ -3,9 +3,20 @@
 // multidemsional array
 
 $webdevelopment = array(
-	'frontend' => array('xhtml', 'css', 'flash', 'javascript'),
-	'backend' => array('backend', 'Ruby on Rails')
+	'frontend' => array(
+		'xhtml', 
+		'css', 
+		'flash', 
+		'javascript'),
+	'backend' => array(
+				'backend', 
+				'Ruby on Rails')
 	);
+
+echo '<pre>';
+print_r($webdevelopment);
+
+echo '<br>';
 
 array_splice($webdevelopment['frontend'], 2, 1); // remove flash from the array
 
@@ -17,10 +28,10 @@ echo '<br>';
 //STANDARD ARRAY
 
 // replace the value xhtml with html within the array frontend
-// $webdevelopment['xhtml'] = 'html';
+$webdevelopment['xhtml'] = 'html';
 
-// echo '<pre>';
-// print_r($webdevelopment); 
+echo '<pre>';
+print_r($webdevelopment); 
 
 /*$frontend = array('xhtml', 'css', 'flash', 'javascript');
 $backend = array('Ruby on Rails');
