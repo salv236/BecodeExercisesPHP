@@ -7,7 +7,7 @@ function sum($num1, $num2){
 
 	$calculation = $num1 + $num2;
 
-	// if the argumentsa re integer return the value and store it in memory
+	// if the arguments are integers return the value and store it in memory
 	if((int)$num1 && (int) $num2){
 	return $calculation;
 	}

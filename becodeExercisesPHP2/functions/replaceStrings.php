@@ -1,31 +1,21 @@
 <?php
 
-//  letters "a" and "e" with the character "æ
-
-// $words = array('caecotrophie', 'chaenichthys','microsphaera', 'sphaerotheca');
-
-// $target = 'æ';
-
-// $words[0] = 'cæcotrophie';
-// $words[1] = 'chænichthys';
-// $words[2] = 'microsphæra';
-// $words[3] = 'sphærotheca';
-
-// echo '<pre>';
-// print_r($words);
-
-function replaceWord($string){
+function replaceWord(){
 	$words = array('caecotrophie', 'chaenichthys','microsphaera', 'sphaerotheca');
 
-//get characters a and e consecutively
- $getLetters = strpos($string, 'ae');
- $replacechars = substr_replace('ae', $getLetters, 0);
- echo $replacechars;
+ $conversion = implode(',', $words); // converts an array to strings
+//get characters ae combination
+ // $getLetters = strpos($conversion, 'ae');
+ // echo $getLetters;
+ // $newStrings = array('æ');
+ $newStrings = 'æ';
+ // replace ae with æ
+ $replacechars = substr_replace($words, 'ae', $newStrings, 2);
 
-//
+ echo '<pre>';
+ var_dump(str_replace('ae', $newStrings, $words));
+ echo '</pre>';
 
-// echo '<pre>';
-  // print_r($words);
 }
 
 echo replaceWord();
