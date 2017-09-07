@@ -7,7 +7,7 @@ Which will cause this injection of html:
 
 <div  class = "warning"> Invalid email address. </div>*/
 
-function displayHtml($message, $attribute){
+function displayHtml(){ // think how we can implement a function in this case with 2 arguments
 	$html = '<div class = "warning"> Invalid email address. </div>';
 	return $html;
 
